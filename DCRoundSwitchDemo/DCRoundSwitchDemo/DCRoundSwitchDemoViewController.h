@@ -19,6 +19,7 @@
 @property (nonatomic, retain) IBOutlet DCRoundSwitch *switch1;
 @property (nonatomic, retain) IBOutlet DCRoundSwitch *switch2;
 @property (nonatomic, retain) IBOutlet DCRoundSwitch *switch3;
+@property (nonatomic, retain) IBOutlet DCRoundSwitch *switch4;
 
 @property (nonatomic, retain) IBOutlet DCRoundSwitch *longSwitch;
 @property (nonatomic, retain) IBOutlet DCRoundSwitch *fatSwitch;

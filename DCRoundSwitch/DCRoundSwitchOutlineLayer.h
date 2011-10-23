@@ -12,5 +12,5 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface DCRoundSwitchOutlineLayer : CALayer
-
+@property (nonatomic, assign) BOOL glossy;
 @end

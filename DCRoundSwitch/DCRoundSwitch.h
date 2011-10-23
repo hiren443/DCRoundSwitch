@@ -27,6 +27,7 @@
 }
 
 @property (nonatomic, getter=isOn) BOOL on;				// default: NO
+@property (nonatomic, assign) BOOL glossy;              // default: YES
 
 @property (nonatomic, retain) UIColor *onTintColor;		// default: blue (matches normal UISwitch)
 @property (nonatomic, retain) UIColor *offTintColor;    // default: white

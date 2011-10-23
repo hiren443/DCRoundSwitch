@@ -25,6 +25,7 @@
 
 @implementation DCRoundSwitch
 @synthesize on;
+@dynamic glossy;
 
 #pragma mark -
 #pragma mark Init & Memory Managment
@@ -111,6 +112,7 @@
 	[toggleLayer setNeedsDisplay];
 
 	outlineLayer = [DCRoundSwitchOutlineLayer layer];
+    outlineLayer.glossy = YES;
 	[toggleLayer addSublayer:outlineLayer];
 	[outlineLayer setNeedsDisplay];
 
@@ -135,6 +137,18 @@
 
 	// setup the layer positions
 	[self positionLayersAndMask];
+}
+
+#pragma mark -
+#pragma mark Glossy property
+
+- (BOOL)glossy {
+    return outlineLayer.glossy;
+} 
+
+- (void)setGlossy:(BOOL)glossy {
+    outlineLayer.glossy = glossy;
+    [outlineLayer setNeedsDisplay];
 }
 
 #pragma mark -

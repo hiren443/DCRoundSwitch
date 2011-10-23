@@ -16,6 +16,7 @@
 @synthesize switch1;
 @synthesize switch2;
 @synthesize switch3;
+@synthesize switch4;
 @synthesize longSwitch;
 
 - (void)dealloc
@@ -25,6 +26,7 @@
 	[switch1 release];
 	[switch2 release];
 	[switch3 release];
+    [switch4 release];
 
 	[super dealloc];
 }
@@ -57,6 +59,10 @@
     self.switch3.onImage = [UIImage imageNamed:@"Smile.png"];
     self.switch3.offImage = [UIImage imageNamed:@"Frown.png"];
 
+    self.switch4.glossy = NO;
+    self.switch4.offTintColor = self.switch4.onTintColor = [UIColor colorWithRed:0.220 green:0.220 blue:0.220 alpha:1.];
+    self.switch4.onText = self.switch4.offText = @"";
+    
 	self.fatSwitch.onText = @"1";
 	self.fatSwitch.offText = @"0";
 
