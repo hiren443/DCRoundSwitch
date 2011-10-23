@@ -89,7 +89,7 @@
 
 	UIGraphicsPushContext(context);
 
-    if (!IsEmpty(self.onImage))
+    if (self.onImage)
     {
         //'ON' Image
         CGSize onImageSize = [self.onImage size];
@@ -98,7 +98,7 @@
     }
 
 
-    if (!IsEmpty(self.onString))
+    if (self.onString)
     {
         // 'ON' state label (self.onString)
         CGSize onTextSize = [self.onString sizeWithFont:self.labelFont];
@@ -109,7 +109,7 @@
         [self.onString drawAtPoint:onTextPoint withFont:self.labelFont];
     }
 
-    if (!IsEmpty(self.offImage))
+    if (self.offImage)
     {
         // 'OFF' Image
         CGSize offImageSize = [self.offImage size];
@@ -117,7 +117,7 @@
         [self.offImage drawAtPoint:offImagePoint];
     }
 
-    if (!IsEmpty(self.offString))
+    if (self.offString)
     {
         // 'OFF' state label (self.offString)
         CGSize offTextSize = [self.offString sizeWithFont:self.labelFont];

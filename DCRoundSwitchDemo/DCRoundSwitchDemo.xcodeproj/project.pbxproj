@@ -68,7 +68,6 @@
 		AB6FE67D13C44146006BCDBB /* DCRoundSwitchDemo copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DCRoundSwitchDemo copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA810681442A6AA007C4A3F /* Frown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frown.png; sourceTree = "<group>"; };
 		ABA810691442A6AA007C4A3F /* Smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smile.png; sourceTree = "<group>"; };
-		ABA8106E1442A6CA007C4A3F /* SBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUtils.h; path = ../../DCRoundSwitch/SBUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +145,6 @@
 		AB6FE5D913C420A3006BCDBB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABA8106E1442A6CA007C4A3F /* SBUtils.h */,
 				AB6FE5DA13C420A3006BCDBB /* DCRoundSwitchDemo-Info.plist */,
 				AB6FE5DB13C420A3006BCDBB /* InfoPlist.strings */,
 				AB6FE5DE13C420A3006BCDBB /* DCRoundSwitchDemo-Prefix.pch */,
